@@ -20,6 +20,7 @@ main {
   margin: auto;
 }
 
+/* section image with text vertical */
 .section-image-with-text-vertical {
   max-width: 810px;
   margin: 80px auto;
@@ -89,3 +90,77 @@ main {
     font-size: 14px;
   }
 }
+
+/* end section image with text vertical */
+
+/* section image with text horizontal */
+.section-image-with-text-horizontal {
+  padding: 0 32.5px 80px 31.5px;
+  color: #1F1F1F;
+}
+
+.section-image-with-text-horizontal .image-with-text-horizontal__container, 
+.section-image-with-text-horizontal .image-with-text-horizontal__box {
+  display: flex;
+  gap: 8px;
+}
+
+.section-image-with-text-horizontal .image-with-text-horizontal__container {
+  flex-direction: column;
+}
+
+.section-image-with-text-horizontal .image-with-text-horizontal__box--second {
+  flex-direction: row-reverse;
+}
+
+.image-with-text-horizontal__box > div {
+  width: calc(50% - 4px);
+}
+
+.image-with-text-horizontal__box .image-with-text-horizontal__image {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.section-image-with-text-horizontal .image-with-text-horizontal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: #F4F0EA;
+  border-radius: 24px;
+}
+
+.image-with-text-horizontal__box--first .image-with-text-horizontal__content {
+  padding: 48px 48px 48px 49px;
+}
+
+.image-with-text-horizontal__box--second .image-with-text-horizontal__content {
+  padding: 70px 47.5px 70px 49.5px;
+}
+
+.image-with-text-horizontal__content .image-with-text-horizontal__heading {
+  font-size: 64px;
+  line-height: 84px;
+  margin-bottom: 40px;
+}
+
+.image-with-text-horizontal__box--first .image-with-text-horizontal__details > div:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.image-with-text-horizontal__box--first .image-with-text-horizontal__details h4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.image-with-text-horizontal__content .image-with-text-horizontal__details p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.image-with-text-horizontal__box--second .image-with-text-horizontal__detail p:not(:last-child) {
+  margin-bottom: 16px;
+}
+/* end section image with text horizontal */
