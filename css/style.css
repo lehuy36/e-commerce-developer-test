@@ -122,6 +122,12 @@ main {
   overflow: hidden;
 }
 
+.image-with-text-horizontal__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .section-image-with-text-horizontal .image-with-text-horizontal__content {
   display: flex;
   flex-direction: column;
@@ -162,5 +168,54 @@ main {
 
 .image-with-text-horizontal__box--second .image-with-text-horizontal__detail p:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1199px) {
+  .image-with-text-horizontal__content .image-with-text-horizontal__heading {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-image-with-text-horizontal .image-with-text-horizontal__content {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-image-with-text-horizontal {
+    padding: 0 8px 40px;
+  }
+
+  .section-image-with-text-horizontal .image-with-text-horizontal__box {
+    flex-direction: column-reverse;
+  }
+
+  .image-with-text-horizontal__box > div {
+    width: 100%;
+  }
+
+  .image-with-text-horizontal__box--first .image-with-text-horizontal__content {
+    padding: 34px 18px 42px;
+  }
+
+  .image-with-text-horizontal__content .image-with-text-horizontal__heading {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 16px;
+  }
+
+  .image-with-text-horizontal__box--first .image-with-text-horizontal__details > div:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .image-with-text-horizontal__box--first .image-with-text-horizontal__details h4 {
+    font-size: 18px;
+  }
+
+  .image-with-text-horizontal__box--second .image-with-text-horizontal__heading {
+    font-family: 'Lato', serif;
+  }
 }
 /* end section image with text horizontal */
