@@ -38,7 +38,15 @@ main {
   gap: 32px;
   padding: 0 10px;
   margin-bottom: 49px;
+  flex-wrap: nowrap;
 }
+
+.section-image-with-text-vertical .image-with-text-vertical__images img {
+  width: calc(50% - 16px);
+  height: auto;
+  object-fit: cover;
+}
+
 .section-image-with-text-vertical .image-with-text-vertical__description p {
   font-size: 16px;
   line-height: 22px;
@@ -47,4 +55,37 @@ main {
 
 .section-image-with-text-vertical .image-with-text-vertical__description p:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .section-image-with-text-vertical {
+    margin: 40px auto;
+  }
+
+  .section-image-with-text-vertical .image-with-text-vertical__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  
+  .section-image-with-text-vertical .image-with-text-vertical__title,
+  .section-image-with-text-vertical .image-with-text-vertical__images {
+    margin-bottom: 27px;
+  }
+
+  .section-image-with-text-vertical .image-with-text-vertical__images {
+    gap: 4.5px;
+    padding: 0 8.23px;
+  }
+
+  .section-image-with-text-vertical .image-with-text-vertical__images img {
+    width: calc(50% - 2.25px);
+  }
+
+  .section-image-with-text-vertical .image-with-text-vertical__description {
+    padding: 0 11px;
+  }
+
+  .section-image-with-text-vertical .image-with-text-vertical__description p {
+    font-size: 14px;
+  }
 }
